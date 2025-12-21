@@ -1,0 +1,54 @@
+.layout {
+  display: flex;
+  height: 100vh;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+@media (min-width: 1020px) {
+  /* Sidebar (default: left panel) */
+  .sidebar {
+    width: 260px;
+    height: 100vh;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    padding: 1rem;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    border-right: 1px solid var(--color-borders);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Right content area */
+  .layout > :not(.sidebar) {
+    flex: 1;
+    padding: 2rem;
+  }
+
+  button:hover {
+    opacity: 0.9;
+  }
+}
+
+@media (max-width: 1019px) {
+  .layout {
+    flex-direction: column; /* stack vertically */
+  }
+
+  .sidebar {
+    width: 100%;            /* full width at top */
+    height: 60px;           /* fixed header height */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-secondary);
+  }
+
+  /* Content area now below header */
+  .layout > :not(.sidebar) {
+    flex: 1;
+    padding: 1rem;
+  }
+}

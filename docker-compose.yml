@@ -1,0 +1,13 @@
+# version: "3.9"
+services:
+  react-app:
+    build: .
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app:cached
+    # stdin_open: true
+    # tty: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - CHOKIDAR_INTERVAL=1000   # check every 1000ms instead of 100ms

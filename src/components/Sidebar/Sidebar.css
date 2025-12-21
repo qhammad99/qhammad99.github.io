@@ -1,0 +1,40 @@
+/* Desktop: sidebar always visible */
+@media (min-width: 1020px) {
+  .hamburger {
+    display: none;
+  }
+  .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* Mobile: navbar mode */
+@media (max-width: 1019px) {
+  .hamburger {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--color-text);
+    padding: .5rem;
+  }
+
+  .sidebar-content {
+    display: none; /* hidden by default */
+    flex-direction: column;
+    background-color: var(--color-background);
+    position: absolute;
+    top: 60px; /* below header bar */
+    left: 0;
+    width: 100%;
+    border-top: 1px solid var(--color-borders);
+    padding: 1rem;
+    z-index: 100;
+    gap: 1rem;
+  }
+
+  .sidebar-content.nav-bar-open {
+    display: flex;
+  }
+}

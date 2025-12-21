@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Default (Light) theme */
+:root {
+  --color-primary: #6468b7;
+  --color-secondary: #f6f0df;
+  --color-borders: #ebe3c9;
+  --color-background: #fdf9ee;
+  --color-text: #1d1d22;
+  --accent-color: var(--color-primary);
+  --main-container-image-url: url("/circuit-board-for-light.svg");
+}
+
+/* Dark theme overrides */
+[data-theme="dark"] {
+  --color-primary: #a2a6fd;
+  --color-secondary: #25252b;
+  --color-borders: #2c2c32;
+  --color-background: #1c1c20;
+  --color-text: #fbfbfb;
+  --accent-color: var(--color-primary);
+  --main-container-image-url: url("/circuit-board-for-dark.svg");
+}

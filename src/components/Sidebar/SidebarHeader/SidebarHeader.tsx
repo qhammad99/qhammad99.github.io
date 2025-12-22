@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
 
 import "./SidebarHeader.css";

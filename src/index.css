@@ -12,7 +12,7 @@ html, body {
 
 /* Default (Light) theme */
 :root {
-  --color-primary: #6468b7;
+  --color-primary: #a07926;
   --color-secondary: #f6f0df;
   --color-borders: #ebe3c9;
   --color-background: #fdf9ee;
@@ -23,7 +23,7 @@ html, body {
 
 /* Dark theme overrides */
 [data-theme="dark"] {
-  --color-primary: #a2a6fd;
+  --color-primary: #a07926;
   --color-secondary: #25252b;
   --color-borders: #2c2c32;
   --color-background: #1c1c20;

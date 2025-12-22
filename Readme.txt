@@ -20,3 +20,5 @@
 
 # stop the server
 # docker-compose down
+
+.github/workflows/deploy.yml
